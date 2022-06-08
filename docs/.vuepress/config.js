@@ -15,11 +15,12 @@ module.exports = {
             title: 'General',
             collapsable: true,
             children: [
-                '/general/change-language.md',
+                '/general/changing-the-language.md',
                 '/general/add-language.md',
                 '/general/create-new-document.md',
                 '/general/rename-document.md',
-                '/general/change-theme.md'
+                '/general/change-theme.md',
+                '/general/open-preferences.md',
             ]
         },
         {
@@ -37,26 +38,37 @@ module.exports = {
         {
             title: 'Projects',
             collapsable: true,
-            children: []
+            children: [
+                '/projects/stacks-progress.md',
+                '/projects/hourly-fee.md',
+                '/projects/change-default-view.md',
+            ]
         },
         {
-            title: 'Essentials',
-            collapsable: false,
+            title: 'Backup',
+            collapsable: true,
             children: [
-            '/essentials/layout.md',
-            '/essentials/library.md',
-            '/essentials/folders.md',
-            '/essentials/tags.md',
-            '/essentials/snippets.md',
-            '/essentials/fragments.md',
-            '/essentials/description.md',
-            '/essentials/assistant.md',
-            '/essentials/search.md',
-            '/essentials/storage.md',
-            '/essentials/sync.md',
-            '/essentials/backup.md',
-            ],
+                '/backup/manual-backup.md',
+            ]
         },
+        // {
+        //     title: 'Essentials',
+        //     collapsable: false,
+        //     children: [
+        //     '/essentials/layout.md',
+        //     '/essentials/library.md',
+        //     '/essentials/folders.md',
+        //     '/essentials/tags.md',
+        //     '/essentials/snippets.md',
+        //     '/essentials/fragments.md',
+        //     '/essentials/description.md',
+        //     '/essentials/assistant.md',
+        //     '/essentials/search.md',
+        //     '/essentials/storage.md',
+        //     '/essentials/sync.md',
+        //     '/essentials/backup.md',
+        //     ],
+        // },
         {
             title: 'Markdown',
             path: '/markdown/',

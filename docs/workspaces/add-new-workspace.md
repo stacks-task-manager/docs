@@ -1,6 +1,6 @@
 # Adding a new workspace
 
-1. Click on the plus sign [<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="12" height="12"><path fill-rule="evenodd" clip-rule="evenodd" d="M16,9h-5V4c0-0.55-0.45-1-1-1S9,3.45,9,4v5H4c-0.55,0-1,0.45-1,1 c0,0.55,0.45,1,1,1h5v5c0,0.55,0.45,1,1,1s1-0.45,1-1v-5h5c0.55,0,1-0.45,1-1C17,9.45,16.55,9,16,9z"/></svg>] on the left and choose between adding a `Local workspace` or `Online workspace`.  Read more [here](./what-is-a-workspace.md) about the different between the 2 types of workspaces.
+1. Click on the plus sign [<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="12" height="12"><path fill-rule="evenodd" clip-rule="evenodd" d="M16,9h-5V4c0-0.55-0.45-1-1-1S9,3.45,9,4v5H4c-0.55,0-1,0.45-1,1 c0,0.55,0.45,1,1,1h5v5c0,0.55,0.45,1,1,1s1-0.45,1-1v-5h5c0.55,0,1-0.45,1-1C17,9.45,16.55,9,16,9z"/></svg>] on the left and choose between adding a `Local workspace` or `Online workspace`.  Read more [here](./what-is-a-workspace.md) about the difference between the 2 types of workspaces.
 
 <img :src="$withBase('/assets/img/workspaces/adding_a_workspace.png')">
 

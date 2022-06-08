@@ -1,5 +1,6 @@
 # Moving a workspace
-1. Click on the **Workflow** menu icon and select **Reveal in Finder** (the file manager's name might change depending on your operating system)
+
+1. Click on the **Workflow** menu icon [`1`] and select **Reveal in Finder** [`2`] (the file manager's name might change depending on your operating system)
 
 <img :src="$withBase('/assets/img/workspaces/find_workspace_path.png')">
 
