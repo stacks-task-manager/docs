@@ -13,8 +13,11 @@ module.exports = {
     sidebar: [
         {
             title: 'General',
-            collapsable: true,
+            collapsable: false,
             children: [
+                '/general/layout.md',
+                '/general/sidebar.md',
+                '/general/documents.md',
                 '/general/changing-the-language.md',
                 '/general/add-language.md',
                 '/general/create-new-document.md',
@@ -25,7 +28,7 @@ module.exports = {
         },
         {
             title: 'Workspaces',
-            collapsable: true,
+            collapsable: false,
             children: [
                 '/workspaces/what-is-a-workspace.md',
                 '/workspaces/moving-a-workspace.md',
@@ -37,60 +40,89 @@ module.exports = {
         },
         {
             title: 'Projects',
-            collapsable: true,
+            collapsable: false,
             children: [
                 '/projects/board-view.md',
                 '/projects/list-view.md',
                 '/projects/table-view.md',
+                '/projects/calendar-view.md',
                 '/projects/stack.md',
                 '/projects/task.md',
                 '/projects/task-details.md',
                 '/projects/tags.md',
                 '/projects/statuses.md',
-                '/projects/stacks-progress.md',
-                '/projects/hourly-fee.md',
-                '/projects/change-default-view.md',
+                '/projects/settings.md',
+            ]
+        },
+        {
+            title: 'People',
+            collapsable: false,
+            children: []
+        },
+        {
+            title: 'Notepad',
+            collapsable: false,
+            children: [
+                '/notepad/add-image.md',
+                '/notepad/resize-image.md',
+            ]
+        },
+        {
+            title: 'Files',
+            collapsable: false,
+            children: []
+        },
+        {
+            title: 'License',
+            collapsable: false,
+            children: [
+                '/license/use-license.md',
+                '/license/buy-license.md',
+                '/license/manage-linked-devices.md',
             ]
         },
         {
             title: 'Syncing',
-            collapsable: true,
+            collapsable: false,
             children: [
                 '/syncing/sync-with-google-drive.md',
+                '/syncing/sync-with-dropbox.md',
             ]
         },
         {
             title: 'Backup',
-            collapsable: true,
+            collapsable: false,
             children: [
                 '/backup/manual-backup.md',
+                '/backup/automatic-backup.md',
+                '/backup/restore-backup.md',
             ]
         },
         {
             title: 'Other',
-            collapsable: true,
+            collapsable: false,
             children: [
                 '/other/joining-beta-program.md',
             ]
         },
-        {
-            title: 'Essentials',
-            collapsable: false,
-            children: [
-            '/essentials/layout.md',
-            '/essentials/library.md',
-            '/essentials/folders.md',
-            '/essentials/tags.md',
-            '/essentials/snippets.md',
-            '/essentials/fragments.md',
-            '/essentials/description.md',
-            '/essentials/assistant.md',
-            '/essentials/search.md',
-            '/essentials/storage.md',
-            '/essentials/sync.md',
-            '/essentials/backup.md',
-            ],
-        },
+        // {
+        //     title: 'Essentials',
+        //     collapsable: false,
+        //     children: [
+        //     '/essentials/layout.md',
+        //     '/essentials/library.md',
+        //     '/essentials/folders.md',
+        //     '/essentials/tags.md',
+        //     '/essentials/snippets.md',
+        //     '/essentials/fragments.md',
+        //     '/essentials/description.md',
+        //     '/essentials/assistant.md',
+        //     '/essentials/search.md',
+        //     '/essentials/storage.md',
+        //     '/essentials/sync.md',
+        //     '/essentials/backup.md',
+        //     ],
+        // },
         {
             title: 'Markdown',
             path: '/markdown/',
