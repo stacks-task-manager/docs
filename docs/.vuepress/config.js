@@ -39,9 +39,24 @@ module.exports = {
             title: 'Projects',
             collapsable: true,
             children: [
+                '/projects/board-view.md',
+                '/projects/list-view.md',
+                '/projects/table-view.md',
+                '/projects/stack.md',
+                '/projects/task.md',
+                '/projects/task-details.md',
+                '/projects/tags.md',
+                '/projects/statuses.md',
                 '/projects/stacks-progress.md',
                 '/projects/hourly-fee.md',
                 '/projects/change-default-view.md',
+            ]
+        },
+        {
+            title: 'Syncing',
+            collapsable: true,
+            children: [
+                '/syncing/sync-with-google-drive.md',
             ]
         },
         {
@@ -51,24 +66,31 @@ module.exports = {
                 '/backup/manual-backup.md',
             ]
         },
-        // {
-        //     title: 'Essentials',
-        //     collapsable: false,
-        //     children: [
-        //     '/essentials/layout.md',
-        //     '/essentials/library.md',
-        //     '/essentials/folders.md',
-        //     '/essentials/tags.md',
-        //     '/essentials/snippets.md',
-        //     '/essentials/fragments.md',
-        //     '/essentials/description.md',
-        //     '/essentials/assistant.md',
-        //     '/essentials/search.md',
-        //     '/essentials/storage.md',
-        //     '/essentials/sync.md',
-        //     '/essentials/backup.md',
-        //     ],
-        // },
+        {
+            title: 'Other',
+            collapsable: true,
+            children: [
+                '/other/joining-beta-program.md',
+            ]
+        },
+        {
+            title: 'Essentials',
+            collapsable: false,
+            children: [
+            '/essentials/layout.md',
+            '/essentials/library.md',
+            '/essentials/folders.md',
+            '/essentials/tags.md',
+            '/essentials/snippets.md',
+            '/essentials/fragments.md',
+            '/essentials/description.md',
+            '/essentials/assistant.md',
+            '/essentials/search.md',
+            '/essentials/storage.md',
+            '/essentials/sync.md',
+            '/essentials/backup.md',
+            ],
+        },
         {
             title: 'Markdown',
             path: '/markdown/',

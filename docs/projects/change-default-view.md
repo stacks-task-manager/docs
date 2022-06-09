@@ -1,4 +1,4 @@
-# Changing the default view
+# Default view
 
 The default view allows you to specify the type of view that by default will be presented when switched to a specific project.
 

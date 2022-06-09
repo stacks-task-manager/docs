@@ -1,4 +1,4 @@
-# Showing stack progress
+# Stack progress
 
 This is a usefull visual feature to show the the average progress [`%`] of all tasks in the stack.
 
