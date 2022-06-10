@@ -24,6 +24,7 @@ module.exports = {
           '/general/rename-document.md',
           '/general/change-theme.md',
           '/general/open-preferences.md',
+          '/general/app-hotkeys.md',
         ],
       },
       {
