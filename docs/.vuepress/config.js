@@ -105,24 +105,6 @@ module.exports = {
                 '/other/joining-beta-program.md',
             ]
         },
-        // {
-        //     title: 'Essentials',
-        //     collapsable: false,
-        //     children: [
-        //     '/essentials/layout.md',
-        //     '/essentials/library.md',
-        //     '/essentials/folders.md',
-        //     '/essentials/tags.md',
-        //     '/essentials/snippets.md',
-        //     '/essentials/fragments.md',
-        //     '/essentials/description.md',
-        //     '/essentials/assistant.md',
-        //     '/essentials/search.md',
-        //     '/essentials/storage.md',
-        //     '/essentials/sync.md',
-        //     '/essentials/backup.md',
-        //     ],
-        // },
         {
             title: 'Markdown',
             path: '/markdown/',

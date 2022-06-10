@@ -3,7 +3,7 @@ import VueAnalytics from 'vue-analytics'
 
 export default ({ Vue, router }) => {
   Vue.use(VueAnalytics, {
-    id: 'UA-56182454-12',
+    id: 'UA-71397235-1',
     router,
     debug: {
       enabled: false,
