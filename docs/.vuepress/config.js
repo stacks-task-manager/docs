@@ -102,10 +102,10 @@ module.exports = {
         collapsable: false,
         children: ['/other/joining-beta-program.md'],
       },
-      {
-        title: 'Markdown',
-        path: '/markdown/',
-      },
+    //   {
+    //     title: 'Markdown',
+    //     path: '/markdown/',
+    //   },
     ],
   },
 };
