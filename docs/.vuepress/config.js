@@ -101,6 +101,7 @@ module.exports = {
         title: 'Other',
         collapsable: false,
         children: ['/other/joining-beta-program.md'],
+        children: ['/other/markdown-syntax.md'],
       },
     //   {
     //     title: 'Markdown',
