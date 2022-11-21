@@ -109,15 +109,17 @@ module.exports = {
     //     title: 'Markdown',
     //     path: '/markdown/',
     //   },
-      {
-        title: 'Server',
-        path: '/server/',
-        children: [
-            '/server/installation.md',
-            '/server/users.md',
-            '/server/admins.md',
-        ],
-      }
+    //   {
+    //     title: 'Server',
+    //     path: '/server/',
+    //     children: [
+    //         '/server/installation.md',
+    //         '/server/users.md',
+    //         '/server/admins.md',
+    //         '/server/deploy.md',
+    //         '/server/api.md',
+    //     ],
+    //   }
     ],
   },
 };
