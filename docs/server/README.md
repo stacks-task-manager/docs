@@ -1,7 +1,7 @@
 # Server
 
-- [Installation](/server/installation)
-- [Users](/server/users)
-- [Admins](/server/admins)
-- [Deploy](/server/deploy)
-- [API & Integrations](/server/api)
+- [Installation](./installation.md)
+- [Users](./users.md)
+- [Admins](./admins.md)
+- [Deploy](./deploy.md)
+- [API & Integrations](./api.md)
