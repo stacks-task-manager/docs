@@ -102,13 +102,24 @@ module.exports = {
       {
         title: 'Other',
         collapsable: false,
-        children: ['/other/joining-beta-program.md'],
-        children: ['/other/markdown-syntax.md'],
+        children: [
+            '/other/joining-beta-program.md',
+            '/other/markdown-syntax.md'
+        ],
       },
-      //   {
-      //     title: 'Markdown',
-      //     path: '/markdown/',
-      //   },
+    //   {
+    //     title: 'Markdown',
+    //     path: '/markdown/',
+    //   },
+      {
+        title: 'Server',
+        path: '/server/',
+        children: [
+            '/server/installation.md',
+            '/server/users.md',
+            '/server/admins.md',
+        ],
+      }
     ],
   },
 };
