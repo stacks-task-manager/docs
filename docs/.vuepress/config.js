@@ -84,8 +84,10 @@ module.exports = {
         title: 'Syncing',
         collapsable: false,
         children: [
+          '/syncing/when-to-sync.md',
           '/syncing/sync-with-google-drive.md',
           '/syncing/sync-with-dropbox.md',
+          '/syncing/sync-with-icloud-drive.md',
         ],
       },
       {
@@ -103,10 +105,10 @@ module.exports = {
         children: ['/other/joining-beta-program.md'],
         children: ['/other/markdown-syntax.md'],
       },
-    //   {
-    //     title: 'Markdown',
-    //     path: '/markdown/',
-    //   },
+      //   {
+      //     title: 'Markdown',
+      //     path: '/markdown/',
+      //   },
     ],
   },
 };
