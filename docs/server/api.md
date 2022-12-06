@@ -1,6 +1,7 @@
 # Web API
 
-## Authentication
+## Super admin authentication
+## User authentication
 
 ## Realtime
 

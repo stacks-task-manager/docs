@@ -39,11 +39,11 @@ Fill the form and hit `Create and login` to continue configuring the server.
 
 ## Importing server settings
 
-In order to work properly with Stacks app the server needs to import a `JSON` configuration file. Download the schema JSON file and followe the next 3 steps:
+In order to work properly with Stacks app the server needs to import a `JSON` configuration file. Download the schema JSON file from <a href="/files/pb_schema.json" download>**here**</a> and follow the next 3 steps:
 
 1. click on `Settings`
 2. click `Import collections` from the sidebar
-3. click the `Load from JSON file` button and select the previously downloaded file
+3. click the `Load from JSON file` button and select the previously downloaded `pb_schema.json` file
 
 <img :src="$withBase('/assets/img/server/import-settings.png')">
 
@@ -54,6 +54,10 @@ To proceed:
 1. click the `Replace with original ids` button
 2. click the `Review` button
 
+::: warning
+Replacing original ids should only be done when installing it for the first time
+:::
+
 <img :src="$withBase('/assets/img/server/confirming-import.png')">
 
 When the modal window is visible:
@@ -62,3 +66,7 @@ When the modal window is visible:
 2. click `Yes` (red button) to confirm and proceed with the import
 
 <img :src="$withBase('/assets/img/server/confirm-and-import.png')">
+
+The server setup should be finished.
+
+To be able to login from the Stacks app you'll need to add your first user. Click [here](./users.md) to read more on how manually to add users.
