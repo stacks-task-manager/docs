@@ -220,7 +220,7 @@
         "options": {
           "maxSelect": 1000,
           "collectionId": "6qcj7li7hfjvaio",
-          "cascadeDelete": true
+          "cascadeDelete": false
         }
       },
       {
@@ -299,6 +299,15 @@
         }
       },
       {
+        "id": "tklqaxk7",
+        "name": "locations",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "unique": false,
+        "options": {}
+      },
+      {
         "id": "qd7t3thw",
         "name": "public",
         "type": "bool",
@@ -317,7 +326,7 @@
         "options": {
           "maxSelect": 1,
           "collectionId": "systemprofiles0",
-          "cascadeDelete": true
+          "cascadeDelete": false
         }
       },
       {
@@ -660,6 +669,15 @@
         }
       },
       {
+        "id": "6g3aodnv",
+        "name": "views",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "unique": false,
+        "options": {}
+      },
+      {
         "id": "d5zjqjts",
         "name": "hourlyRate",
         "type": "number",
@@ -718,6 +736,15 @@
           "collectionId": "systemprofiles0",
           "cascadeDelete": false
         }
+      },
+      {
+        "id": "majspui2",
+        "name": "showSubtasks",
+        "type": "bool",
+        "system": false,
+        "required": false,
+        "unique": false,
+        "options": {}
       },
       {
         "id": "woedyesj",
@@ -1053,6 +1080,19 @@
         }
       },
       {
+        "id": "jsmvvzha",
+        "name": "after",
+        "type": "relation",
+        "system": false,
+        "required": false,
+        "unique": false,
+        "options": {
+          "maxSelect": 1,
+          "collectionId": "w9tfbtzkdqp2fad",
+          "cascadeDelete": false
+        }
+      },
+      {
         "id": "kw3zdqng",
         "name": "type",
         "type": "select",
@@ -1101,7 +1141,7 @@
         "options": {
           "maxSelect": 1,
           "collectionId": "systemprofiles0",
-          "cascadeDelete": true
+          "cascadeDelete": false
         }
       },
       {
@@ -1190,33 +1230,6 @@
     "viewRule": "@request.auth.id != \"\" && deleted = \"\" && (@request.auth.role = \"admin\" || owner = @request.auth.id || public = true || visibleUsers ~ @request.auth.id || visibleRoles ~ @request.auth.role)",
     "createRule": "@request.auth.id != ''",
     "updateRule": "@request.auth.id != \"\" && deleted = \"\" && (@request.auth.role = \"admin\" || owner = @request.auth.id || public = true || visibleUsers ~ @request.auth.id || visibleRoles ~ @request.auth.role)",
-    "deleteRule": null,
-    "options": {}
-  },
-  {
-    "id": "n4dzapxzfsx5mj2",
-    "name": "ping",
-    "type": "base",
-    "system": false,
-    "schema": [
-      {
-        "id": "ozxjrora",
-        "name": "pong",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "unique": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      }
-    ],
-    "listRule": "",
-    "viewRule": "",
-    "createRule": null,
-    "updateRule": null,
     "deleteRule": null,
     "options": {}
   },
