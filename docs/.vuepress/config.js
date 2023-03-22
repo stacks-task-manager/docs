@@ -14,17 +14,20 @@ module.exports = {
       {
         title: 'General',
         collapsable: false,
+        path: '/general/',
         children: [
           '/general/layout.md',
           '/general/sidebar.md',
           '/general/documents.md',
+          '/general/home.md',
+          '/general/calendar.md',
           '/general/changing-the-language.md',
           '/general/add-language.md',
           '/general/create-new-document.md',
           '/general/rename-document.md',
           '/general/change-theme.md',
           '/general/open-preferences.md',
-          '/general/app-hotkeys.md',
+          '/general/keyboard-shortcuts.md',
         ],
       },
       {
@@ -47,7 +50,6 @@ module.exports = {
           '/projects/board-view.md',
           '/projects/list-view.md',
           '/projects/table-view.md',
-          '/projects/calendar-view.md',
           '/projects/stack.md',
           '/projects/task.md',
           '/projects/task-details.md',
@@ -58,6 +60,7 @@ module.exports = {
       },
       {
         title: 'People',
+        path: '/people/',
         collapsable: false,
         children: [],
       },

@@ -1,9 +1,19 @@
 # Renaming a workspace
 
-1. Click on the workflow menu icon [<svg width="12px" height="12px" viewBox="0 0 5 19" xmlns="http://www.w3.org/2000/svg"><circle cx="2.5" cy="2.5" r="2.5"></circle><circle cx="2.5" cy="16.5" r="2.5"></circle><circle cx="2.5" cy="9.5" r="2.5"></circle></svg>] and select **Edit workspace...**
+To edit a workspace follow these steps:
 
-<img :src="$withBase('/assets/img/workspaces/editing_a_workspace.png')">
+1. Click and select the workspace you want to edit from the sidebar
+2. Click on the workflow menu icon 
+3. Clicl the `Edit workspace...` menu item
 
-2. For a local folder you can just change the name of the workspace, in case you need to change the path/location, you need to remove it and add it as new workplace. Checkout [how to move a workspace](./moving-a-workspace.md) article.
+<img :src="$withBase('/assets/img/workspaces/renaming-workspace.png')">
 
-<img :src="$withBase('/assets/img/workspaces/editing_a_workspace_local_folder.png')">
+1. Change or update the workspace title
+2. Optionally change the workspace icon
+3. Save the current workspace name
+
+<img :src="$withBase('/assets/img/workspaces/edit-workspace-title.png')">
+
+:::tip
+In case you need to change the path/location of your local workspacec check out the [how to move a workspace](./moving-a-workspace.md) guide.
+:::
