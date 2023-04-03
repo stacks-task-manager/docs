@@ -62,7 +62,11 @@ module.exports = {
         title: 'People',
         path: '/people/',
         collapsable: false,
-        children: [],
+        children: [
+            '/people/adding-person.md',
+            '/people/adding-company.md',
+            '/people/people-workload.md'
+        ],
       },
       {
         title: 'Notepad',
