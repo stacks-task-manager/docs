@@ -20,7 +20,7 @@ Tasks are moved horizontally from left to right based on they status. When a tas
 
 ### Feature usage example
 
-In this case the task are not moving to different columns when you start working on them but rather they get tagged either by using a [Status](./statuses.md) or [Tags](./tags.md) to mark `working on` state.
+In this case the tasks are not moving to different columns when you start working on them but rather they get tagged either by using a [Status](./statuses.md) or [Tags](./tags.md) to mark `working on` state.
 
 | Feature 1 | Feature 2 | Feature 3
 | --- | :---: | :---: | 
