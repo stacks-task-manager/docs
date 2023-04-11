@@ -63,6 +63,7 @@ module.exports = {
           '/projects/automations.md',
           '/projects/settings.md',
           '/projects/reports.md',
+          '/projects/import.md',
         ],
       },
       {

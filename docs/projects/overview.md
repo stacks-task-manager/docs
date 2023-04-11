@@ -38,3 +38,35 @@ The tags and statuses overview section will show you the total task count groupe
 <p align="center">
 <img :src="$withBase('/assets/img/projects/overview-tags-statuses.png')" width="90%">
 </p>
+
+## People overview
+
+There are several overview sections related around project members. These sections shows how's assigned on the current project, how many tasks they have assgined and the time logged by each of them.
+
+<p align="center">
+<img :src="$withBase('/assets/img/projects/overview-people.png')" width="90%">
+</p>
+
+## Earnings overview
+
+Earnings overview sections will show the total sum of all estimated vs. logged times along side the earnings based on the estimate time and spent time.
+
+<p align="center">
+<img :src="$withBase('/assets/img/projects/overview-earnings.png')" width="50%">
+</p>
+
+## Project status overview
+
+The project status overview shows some basic info about the current project:
+
+- created and last updated date
+- owner
+- company
+- start and end date
+- project health
+
+## Stacks overview
+
+The stacks overview shows both the estimated vs. spent time and task counts per each stack.
+
+<img :src="$withBase('/assets/img/projects/overview-stacks.png')">
