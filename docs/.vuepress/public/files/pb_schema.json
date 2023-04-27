@@ -1131,194 +1131,6 @@
     "options": {}
   },
   {
-    "id": "8p5mbut5ncktxwy",
-    "name": "tags",
-    "type": "base",
-    "system": false,
-    "schema": [
-      {
-        "id": "5rco5jzy",
-        "name": "title",
-        "type": "text",
-        "system": false,
-        "required": true,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "cd02arkw",
-        "name": "color",
-        "type": "text",
-        "system": false,
-        "required": true,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "bfrblfuw",
-        "name": "updatedBy",
-        "type": "relation",
-        "system": false,
-        "required": true,
-        "options": {
-          "collectionId": "systemprofiles0",
-          "cascadeDelete": false,
-          "minSelect": null,
-          "maxSelect": 1,
-          "displayFields": null
-        }
-      },
-      {
-        "id": "e9ebzlt5",
-        "name": "createdBy",
-        "type": "relation",
-        "system": false,
-        "required": true,
-        "options": {
-          "collectionId": "systemprofiles0",
-          "cascadeDelete": false,
-          "minSelect": null,
-          "maxSelect": 1,
-          "displayFields": null
-        }
-      },
-      {
-        "id": "wxiaevtc",
-        "name": "deleted",
-        "type": "date",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": "",
-          "max": ""
-        }
-      },
-      {
-        "id": "x8bthgvm",
-        "name": "deletedBy",
-        "type": "relation",
-        "system": false,
-        "required": false,
-        "options": {
-          "collectionId": "systemprofiles0",
-          "cascadeDelete": false,
-          "minSelect": null,
-          "maxSelect": 1,
-          "displayFields": null
-        }
-      }
-    ],
-    "indexes": [
-      "CREATE INDEX `tags_created_idx` ON `tags` (`created`)"
-    ],
-    "listRule": "@request.auth.id != \"\" && deleted = \"\"",
-    "viewRule": "@request.auth.id != \"\" && deleted = \"\"",
-    "createRule": "@request.auth.id != \"\"",
-    "updateRule": "deleted = \"\" && @request.auth.id != \"\"",
-    "deleteRule": null,
-    "options": {}
-  },
-  {
-    "id": "kacteo9j7yi2kh6",
-    "name": "statuses",
-    "type": "base",
-    "system": false,
-    "schema": [
-      {
-        "id": "vn7l10cl",
-        "name": "title",
-        "type": "text",
-        "system": false,
-        "required": true,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "qsk68ltv",
-        "name": "color",
-        "type": "text",
-        "system": false,
-        "required": true,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "veauyr5h",
-        "name": "updatedBy",
-        "type": "relation",
-        "system": false,
-        "required": true,
-        "options": {
-          "collectionId": "systemprofiles0",
-          "cascadeDelete": false,
-          "minSelect": null,
-          "maxSelect": 1,
-          "displayFields": null
-        }
-      },
-      {
-        "id": "osgq6gtf",
-        "name": "createdBy",
-        "type": "relation",
-        "system": false,
-        "required": true,
-        "options": {
-          "collectionId": "systemprofiles0",
-          "cascadeDelete": false,
-          "minSelect": null,
-          "maxSelect": 1,
-          "displayFields": null
-        }
-      },
-      {
-        "id": "wglke1sq",
-        "name": "deleted",
-        "type": "date",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": "",
-          "max": ""
-        }
-      },
-      {
-        "id": "fz7hfwx2",
-        "name": "deletedBy",
-        "type": "relation",
-        "system": false,
-        "required": false,
-        "options": {
-          "collectionId": "systemprofiles0",
-          "cascadeDelete": false,
-          "minSelect": null,
-          "maxSelect": 1,
-          "displayFields": null
-        }
-      }
-    ],
-    "indexes": [
-      "CREATE INDEX `statuses_created_idx` ON `statuses` (`created`)"
-    ],
-    "listRule": "@request.auth.id != \"\" && deleted = \"\"",
-    "viewRule": "@request.auth.id != \"\" && deleted = \"\"",
-    "createRule": "@request.auth.id != \"\"",
-    "updateRule": "deleted = \"\" && @request.auth.id != \"\"",
-    "deleteRule": null,
-    "options": {}
-  },
-  {
     "id": "9rnob6hqifpxz6t",
     "name": "events",
     "type": "base",
@@ -1388,7 +1200,8 @@
           "maxSelect": 1,
           "maxSize": 5242880,
           "mimeTypes": [],
-          "thumbs": []
+          "thumbs": [],
+          "protected": false
         }
       },
       {
@@ -1781,7 +1594,8 @@
           "maxSelect": 1,
           "maxSize": 104857600,
           "mimeTypes": [],
-          "thumbs": []
+          "thumbs": [],
+          "protected": false
         }
       },
       {
@@ -1901,435 +1715,6 @@
     "options": {}
   },
   {
-    "id": "systemprofiles0",
-    "name": "users",
-    "type": "auth",
-    "system": false,
-    "schema": [
-      {
-        "id": "vzjluoqf",
-        "name": "role",
-        "type": "select",
-        "system": false,
-        "required": true,
-        "options": {
-          "maxSelect": 1,
-          "values": [
-            "admin",
-            "manager",
-            "user",
-            "collaborator",
-            "client",
-            "contact"
-          ]
-        }
-      },
-      {
-        "id": "mmenhvgr",
-        "name": "firstName",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "chye7whw",
-        "name": "lastName",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "q9bhfpgi",
-        "name": "gender",
-        "type": "select",
-        "system": false,
-        "required": false,
-        "options": {
-          "maxSelect": 1,
-          "values": [
-            "male",
-            "female",
-            "other"
-          ]
-        }
-      },
-      {
-        "id": "dkhj7if8",
-        "name": "nickname",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "lqhukgfm",
-        "name": "birthday",
-        "type": "date",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": "",
-          "max": ""
-        }
-      },
-      {
-        "id": "zsp5qqtl",
-        "name": "birthdayDay",
-        "type": "number",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null
-        }
-      },
-      {
-        "id": "bsedkxpr",
-        "name": "birthdayMonth",
-        "type": "number",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null
-        }
-      },
-      {
-        "id": "tdd8aywg",
-        "name": "title",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "dyivatfj",
-        "name": "jobTitle",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "rgtvobm4",
-        "name": "company",
-        "type": "relation",
-        "system": false,
-        "required": false,
-        "options": {
-          "collectionId": "na8d7a89j9lnxd0",
-          "cascadeDelete": false,
-          "minSelect": null,
-          "maxSelect": 1,
-          "displayFields": []
-        }
-      },
-      {
-        "id": "0qu6kbco",
-        "name": "officePhone",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "xiudf60z",
-        "name": "cellPhone",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "xm3jygnm",
-        "name": "homePhone",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "aeid3a8p",
-        "name": "fax",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "cnlezb9l",
-        "name": "address",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "aln0n14t",
-        "name": "county",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "2lwp6o5k",
-        "name": "zip",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "sbfqnnc3",
-        "name": "city",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "bi3elib4",
-        "name": "country",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "qjnqmeic",
-        "name": "address2",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "kp9nw7ao",
-        "name": "website",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "pzaqz6nt",
-        "name": "notes",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "vgvgknxh",
-        "name": "socialTwitter",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "d0yq2p6p",
-        "name": "socialFacebook",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "t8tb1mcj",
-        "name": "socialLinkedin",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "sglnns3e",
-        "name": "socialInstagram",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "hpjtkmhx",
-        "name": "socialOther",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "n94kuagq",
-        "name": "personalId",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "fd83uldf",
-        "name": "type",
-        "type": "text",
-        "system": false,
-        "required": false,
-        "options": {
-          "min": null,
-          "max": null,
-          "pattern": ""
-        }
-      },
-      {
-        "id": "wdhna0lq",
-        "name": "profilePic",
-        "type": "file",
-        "system": false,
-        "required": false,
-        "options": {
-          "maxSelect": 1,
-          "maxSize": 5242880,
-          "mimeTypes": [
-            "image/jpg",
-            "image/jpeg",
-            "image/png",
-            "image/svg+xml",
-            "image/gif"
-          ],
-          "thumbs": [
-            "100x100"
-          ]
-        }
-      },
-      {
-        "id": "zbnhlv0r",
-        "name": "updatedBy",
-        "type": "relation",
-        "system": false,
-        "required": false,
-        "options": {
-          "collectionId": "systemprofiles0",
-          "cascadeDelete": false,
-          "minSelect": null,
-          "maxSelect": 1,
-          "displayFields": null
-        }
-      }
-    ],
-    "indexes": [
-      "CREATE INDEX `_systemprofiles0_created_idx` ON `users` (`created`)"
-    ],
-    "listRule": "@request.auth.id != \"\"",
-    "viewRule": "id = @request.auth.id",
-    "createRule": "@request.auth.id != ''",
-    "updateRule": "@request.auth.id != \"\" && (id = @request.auth.id || @request.auth.role = \"admin\" || role = \"contact\" || @request.data.role = null || @request.data.role = role)",
-    "deleteRule": null,
-    "options": {
-      "allowEmailAuth": true,
-      "allowOAuth2Auth": false,
-      "allowUsernameAuth": false,
-      "exceptEmailDomains": null,
-      "manageRule": "@request.auth.id != \"\" && (@request.auth.role = \"admin\" || @request.auth.id = id)",
-      "minPasswordLength": 8,
-      "onlyEmailDomains": null,
-      "requireEmail": true
-    }
-  },
-  {
     "id": "na8d7a89j9lnxd0",
     "name": "companies",
     "type": "base",
@@ -2389,7 +1774,8 @@
           ],
           "thumbs": [
             "0x80"
-          ]
+          ],
+          "protected": false
         }
       },
       {
@@ -2991,7 +2377,8 @@
             "image/svg+xml",
             "image/gif"
           ],
-          "thumbs": []
+          "thumbs": [],
+          "protected": false
         }
       },
       {
@@ -3087,7 +2474,8 @@
           "maxSelect": 100,
           "maxSize": 2048576000,
           "mimeTypes": [],
-          "thumbs": []
+          "thumbs": [],
+          "protected": false
         }
       },
       {
@@ -3135,14 +2523,6 @@
       {
         "id": "tklqaxk7",
         "name": "locations",
-        "type": "json",
-        "system": false,
-        "required": false,
-        "options": {}
-      },
-      {
-        "id": "zudgaf4y",
-        "name": "links",
         "type": "json",
         "system": false,
         "required": false,
@@ -3252,6 +2632,14 @@
           "maxSelect": 1,
           "displayFields": null
         }
+      },
+      {
+        "id": "zudgaf4y",
+        "name": "links",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
       }
     ],
     "indexes": [
@@ -3263,5 +2651,671 @@
     "updateRule": "@request.auth.id != \"\" && deleted = \"\" && (@request.auth.role = \"admin\" || owner = @request.auth.id || public = true || visibleUsers ~ @request.auth.id || visibleRoles ~ @request.auth.role)",
     "deleteRule": null,
     "options": {}
+  },
+  {
+    "id": "8p5mbut5ncktxwy",
+    "name": "tags",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "5rco5jzy",
+        "name": "title",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "cd02arkw",
+        "name": "color",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "diwnz8bs",
+        "name": "section",
+        "type": "select",
+        "system": false,
+        "required": true,
+        "options": {
+          "maxSelect": 1,
+          "values": [
+            "project",
+            "people"
+          ]
+        }
+      },
+      {
+        "id": "bfrblfuw",
+        "name": "updatedBy",
+        "type": "relation",
+        "system": false,
+        "required": true,
+        "options": {
+          "collectionId": "systemprofiles0",
+          "cascadeDelete": false,
+          "minSelect": null,
+          "maxSelect": 1,
+          "displayFields": null
+        }
+      },
+      {
+        "id": "e9ebzlt5",
+        "name": "createdBy",
+        "type": "relation",
+        "system": false,
+        "required": true,
+        "options": {
+          "collectionId": "systemprofiles0",
+          "cascadeDelete": false,
+          "minSelect": null,
+          "maxSelect": 1,
+          "displayFields": null
+        }
+      },
+      {
+        "id": "wxiaevtc",
+        "name": "deleted",
+        "type": "date",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": "",
+          "max": ""
+        }
+      },
+      {
+        "id": "x8bthgvm",
+        "name": "deletedBy",
+        "type": "relation",
+        "system": false,
+        "required": false,
+        "options": {
+          "collectionId": "systemprofiles0",
+          "cascadeDelete": false,
+          "minSelect": null,
+          "maxSelect": 1,
+          "displayFields": null
+        }
+      }
+    ],
+    "indexes": [
+      "CREATE INDEX `tags_created_idx` ON `tags` (`created`)"
+    ],
+    "listRule": "@request.auth.id != \"\" && deleted = \"\"",
+    "viewRule": "@request.auth.id != \"\" && deleted = \"\"",
+    "createRule": "@request.auth.id != \"\"",
+    "updateRule": "deleted = \"\" && @request.auth.id != \"\"",
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "kacteo9j7yi2kh6",
+    "name": "statuses",
+    "type": "base",
+    "system": false,
+    "schema": [
+      {
+        "id": "vn7l10cl",
+        "name": "title",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "qsk68ltv",
+        "name": "color",
+        "type": "text",
+        "system": false,
+        "required": true,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "d1zopgmg",
+        "name": "section",
+        "type": "select",
+        "system": false,
+        "required": false,
+        "options": {
+          "maxSelect": 1,
+          "values": [
+            "project",
+            "people"
+          ]
+        }
+      },
+      {
+        "id": "veauyr5h",
+        "name": "updatedBy",
+        "type": "relation",
+        "system": false,
+        "required": true,
+        "options": {
+          "collectionId": "systemprofiles0",
+          "cascadeDelete": false,
+          "minSelect": null,
+          "maxSelect": 1,
+          "displayFields": null
+        }
+      },
+      {
+        "id": "osgq6gtf",
+        "name": "createdBy",
+        "type": "relation",
+        "system": false,
+        "required": true,
+        "options": {
+          "collectionId": "systemprofiles0",
+          "cascadeDelete": false,
+          "minSelect": null,
+          "maxSelect": 1,
+          "displayFields": null
+        }
+      },
+      {
+        "id": "wglke1sq",
+        "name": "deleted",
+        "type": "date",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": "",
+          "max": ""
+        }
+      },
+      {
+        "id": "fz7hfwx2",
+        "name": "deletedBy",
+        "type": "relation",
+        "system": false,
+        "required": false,
+        "options": {
+          "collectionId": "systemprofiles0",
+          "cascadeDelete": false,
+          "minSelect": null,
+          "maxSelect": 1,
+          "displayFields": null
+        }
+      }
+    ],
+    "indexes": [
+      "CREATE INDEX `statuses_created_idx` ON `statuses` (`created`)"
+    ],
+    "listRule": "@request.auth.id != \"\" && deleted = \"\"",
+    "viewRule": "@request.auth.id != \"\" && deleted = \"\"",
+    "createRule": "@request.auth.id != \"\"",
+    "updateRule": "deleted = \"\" && @request.auth.id != \"\"",
+    "deleteRule": null,
+    "options": {}
+  },
+  {
+    "id": "systemprofiles0",
+    "name": "users",
+    "type": "auth",
+    "system": false,
+    "schema": [
+      {
+        "id": "vzjluoqf",
+        "name": "role",
+        "type": "select",
+        "system": false,
+        "required": true,
+        "options": {
+          "maxSelect": 1,
+          "values": [
+            "admin",
+            "manager",
+            "user",
+            "collaborator",
+            "client",
+            "contact"
+          ]
+        }
+      },
+      {
+        "id": "mmenhvgr",
+        "name": "firstName",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "chye7whw",
+        "name": "lastName",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "q9bhfpgi",
+        "name": "gender",
+        "type": "select",
+        "system": false,
+        "required": false,
+        "options": {
+          "maxSelect": 1,
+          "values": [
+            "male",
+            "female",
+            "other"
+          ]
+        }
+      },
+      {
+        "id": "dkhj7if8",
+        "name": "nickname",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "lqhukgfm",
+        "name": "birthday",
+        "type": "date",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": "",
+          "max": ""
+        }
+      },
+      {
+        "id": "zsp5qqtl",
+        "name": "birthdayDay",
+        "type": "number",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "id": "bsedkxpr",
+        "name": "birthdayMonth",
+        "type": "number",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null
+        }
+      },
+      {
+        "id": "tdd8aywg",
+        "name": "title",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "dyivatfj",
+        "name": "jobTitle",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "rgtvobm4",
+        "name": "company",
+        "type": "relation",
+        "system": false,
+        "required": false,
+        "options": {
+          "collectionId": "na8d7a89j9lnxd0",
+          "cascadeDelete": false,
+          "minSelect": null,
+          "maxSelect": 1,
+          "displayFields": []
+        }
+      },
+      {
+        "id": "0qu6kbco",
+        "name": "officePhone",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "xiudf60z",
+        "name": "cellPhone",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "xm3jygnm",
+        "name": "homePhone",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "aeid3a8p",
+        "name": "fax",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "cnlezb9l",
+        "name": "address",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "aln0n14t",
+        "name": "county",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "2lwp6o5k",
+        "name": "zip",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "sbfqnnc3",
+        "name": "city",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "bi3elib4",
+        "name": "country",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "qjnqmeic",
+        "name": "address2",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "kp9nw7ao",
+        "name": "website",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "pzaqz6nt",
+        "name": "notes",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "vgvgknxh",
+        "name": "socialTwitter",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "d0yq2p6p",
+        "name": "socialFacebook",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "t8tb1mcj",
+        "name": "socialLinkedin",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "sglnns3e",
+        "name": "socialInstagram",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "hpjtkmhx",
+        "name": "socialOther",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "n94kuagq",
+        "name": "personalId",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "fd83uldf",
+        "name": "type",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "wdhna0lq",
+        "name": "profilePic",
+        "type": "file",
+        "system": false,
+        "required": false,
+        "options": {
+          "maxSelect": 1,
+          "maxSize": 5242880,
+          "mimeTypes": [
+            "image/jpg",
+            "image/jpeg",
+            "image/png",
+            "image/svg+xml",
+            "image/gif"
+          ],
+          "thumbs": [
+            "100x100"
+          ],
+          "protected": false
+        }
+      },
+      {
+        "id": "j5vd4tbl",
+        "name": "tags",
+        "type": "json",
+        "system": false,
+        "required": false,
+        "options": {}
+      },
+      {
+        "id": "nksvwfgj",
+        "name": "status",
+        "type": "text",
+        "system": false,
+        "required": false,
+        "options": {
+          "min": null,
+          "max": null,
+          "pattern": ""
+        }
+      },
+      {
+        "id": "zbnhlv0r",
+        "name": "updatedBy",
+        "type": "relation",
+        "system": false,
+        "required": false,
+        "options": {
+          "collectionId": "systemprofiles0",
+          "cascadeDelete": false,
+          "minSelect": null,
+          "maxSelect": 1,
+          "displayFields": null
+        }
+      }
+    ],
+    "indexes": [
+      "CREATE INDEX `_systemprofiles0_created_idx` ON `users` (`created`)"
+    ],
+    "listRule": "@request.auth.id != \"\"",
+    "viewRule": "id = @request.auth.id",
+    "createRule": "@request.auth.id != ''",
+    "updateRule": "@request.auth.id != \"\" && (id = @request.auth.id || @request.auth.role = \"admin\" || role = \"contact\" || @request.data.role = null || @request.data.role = role)",
+    "deleteRule": null,
+    "options": {
+      "allowEmailAuth": true,
+      "allowOAuth2Auth": false,
+      "allowUsernameAuth": false,
+      "exceptEmailDomains": null,
+      "manageRule": "@request.auth.id != \"\" && (@request.auth.role = \"admin\" || @request.auth.id = id)",
+      "minPasswordLength": 8,
+      "onlyEmailDomains": null,
+      "requireEmail": true
+    }
   }
 ]

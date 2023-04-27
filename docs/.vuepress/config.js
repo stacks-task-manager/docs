@@ -63,7 +63,6 @@ module.exports = {
           '/projects/automations.md',
           '/projects/settings.md',
           '/projects/reports.md',
-          '/projects/import.md',
         ],
       },
       {
@@ -122,6 +121,15 @@ module.exports = {
             '/other/markdown-syntax.md'
         ],
       },
+      {
+        title: 'Import',
+        collapsable: false,
+        path: '/import/',
+        children: [
+            '/import/trello.md',
+            '/import/asana.md'
+        ]
+      },
     //   {
     //     title: 'Markdown',
     //     path: '/markdown/',
@@ -129,6 +137,7 @@ module.exports = {
       {
         title: 'Server',
         path: '/server/',
+        collapsable: false,
         children: [
             '/server/installation.md',
             '/server/users.md',

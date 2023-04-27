@@ -7,7 +7,7 @@
 ``` dockerfile
 FROM alpine:latest
 
-ARG PB_VERSION=0.11.3
+ARG PB_VERSION=0.15.2
 
 RUN apk add --no-cache \
     unzip \
@@ -83,7 +83,7 @@ processes = []
 
 # optional if you want to change the PocketBase version
 [build.args]
-  PB_VERSION="0.11.3"
+  PB_VERSION="0.15.2"
 
 [[services]]
   http_checks   = []

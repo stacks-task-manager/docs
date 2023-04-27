@@ -4,34 +4,38 @@ Tags are another way to organize your tasks. Unlike stacks or [statuses](./statu
 
 ## Adding a Tag
 
-There are 2 ways of creating a new tag:
+There are multiple ways of creating a new tag:
 
-1. from the [Task details](./task-details.md)
+1. From the [Task details](./task-details.md)
     1. click the **Add tag** under the **Tags** section
     2. start typing the new tag name
     3. select a color from the predefined list and click the **Create new tag** button
-2. from the project preferences
+2. From the **Project settings**
     1. open the project for where you want to delete a tag
     2. from the **top toolbar** click the last option called **Manage project preferences**
     3. select the **Tags** tab and click **Add tag**
+3. From any task card
+    1. click the tag button under the task title
+    2. start typing the new tag name
+    3. select a color from the predefined list and click the **Create new tag** button
 
 ## Deleting Tag
 
-1. open the project for where you want to delete a tag
-2. from the **top toolbar** click the last option called **Manage project preferences**
-3. select the **Tags** tab and click the <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.41,10l4.29-4.29C15.89,5.53,16,5.28,16,5c0-0.55-0.45-1-1-1 c-0.28,0-0.53,0.11-0.71,0.29L10,8.59L5.71,4.29C5.53,4.11,5.28,4,5,4C4.45,4,4,4.45,4,5c0,0.28,0.11,0.53,0.29,0.71L8.59,10 l-4.29,4.29C4.11,14.47,4,14.72,4,15c0,0.55,0.45,1,1,1c0.28,0,0.53-0.11,0.71-0.29L10,11.41l4.29,4.29 C14.47,15.89,14.72,16,15,16c0.55,0,1-0.45,1-1c0-0.28-0.11-0.53-0.29-0.71L11.41,10z"/></svg> button to remove a tag
+1. Open the project for where you want to delete a tag
+2. From the **top toolbar** click the last option called **Manage project preferences**
+3. Select the **Tags** tab and click the button to remove a tag
 
 ::: warning
-By deleting a tag (either a workspace or local tag) it will also remove it from any assiged tasks
+By deleting a tag it will also remove it from any assiged tasks
 :::
 
 ## Changing Tag color
 
-1. open the project for where you want to change the color of a tag
-2. from the **top toolbar** click the last option called **Manage project preferences**
-3. select the **Tags** tab and click the tag
-4. click the colored square to select a new color
-5. click on the `tick` <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M17,4c-0.28,0-0.53,0.11-0.71,0.29L7,13.59l-3.29-3.29C3.53,10.11,3.28,10,3,10 c-0.55,0-1,0.45-1,1c0,0.28,0.11,0.53,0.29,0.71l4,4C6.47,15.89,6.72,16,7,16s0.53-0.11,0.71-0.29l10-10C17.89,5.53,18,5.28,18,5 C18,4.45,17.55,4,17,4z"/></svg> button to save the new color 
+1. Open any project
+2. Open the **Project settings** from the project context menu located in the **top toolbar** 
+3. Click on the **Tags** tab and click the tag you want to change
+4. Click the colored square to select a new color
+5. Click on the `tick` <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 20 20"><path fill-rule="evenodd" clip-rule="evenodd" d="M17,4c-0.28,0-0.53,0.11-0.71,0.29L7,13.59l-3.29-3.29C3.53,10.11,3.28,10,3,10 c-0.55,0-1,0.45-1,1c0,0.28,0.11,0.53,0.29,0.71l4,4C6.47,15.89,6.72,16,7,16s0.53-0.11,0.71-0.29l10-10C17.89,5.53,18,5.28,18,5 C18,4.45,17.55,4,17,4z"/></svg> button to save the new color 
 
 ## Search for tagged tasks
 
@@ -39,8 +43,8 @@ Click on **Filter tasks** button [<svg xmlns="http://www.w3.org/2000/svg" viewBo
 
 ## Assigning a Tag to a Task
 
-Tags can be assigned to tasks in 3 different ways:
+Tags can be assigned to tasks in different ways:
 
-1. right click on the task card in [Board view](./board-view.md) or [List view](./list-view.md)
-2. from the [Task details](./task-details.md)
-3. using [Automations](./automations.md)
+1. From the task context menu in [Board view](./board-view.md) or [List view](./list-view.md)
+2. From the [Task details](./task-details.md)
+3. Using [Automations](./automations.md)
