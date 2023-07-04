@@ -64,6 +64,7 @@ module.exports = {
           '/projects/settings.md',
           '/projects/reports.md',
           '/projects/filtering.md',
+          '/projects/colors.md',
         ],
       },
       {
