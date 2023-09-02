@@ -21,9 +21,9 @@ jobs:
 
     - name: Sync files to FTP
       uses: airvzxf/ftp-deployment-action@latest
-        with:
-          server: ${{ secrets.FTPSERVER }}
-          user: ${{ secrets.FTPUSERNAME }}
-          password: ${{ secrets.FTPPASSWORD }}
-          local_dir: "./docs/.vuepress/dist/"
-          remote_dir: "./docs.getstacksapp.com/"
+      with:
+        server: ${{ secrets.FTPSERVER }}
+        user: ${{ secrets.FTPUSERNAME }}
+        password: ${{ secrets.FTPPASSWORD }}
+        local_dir: "./docs/.vuepress/dist/"
+        remote_dir: "./docs.getstacksapp.com/"
