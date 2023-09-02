@@ -17,15 +17,11 @@ jobs:
         BUILD_DIR: docs/.vuepress/dist
         COMMIT_MESSAGE:  Auto deploy by the Vuepress-deploy
 
-    - name: Cleanup
-      uses: rokroskar/workflow-run-cleanup-action@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-
     - name: Checkout Deploy branch
       uses: actions/checkout@master
       with:
         ref: deploy
+        path: deploy
 
     - name: Sync files to FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -33,5 +29,5 @@ jobs:
         server: ${{ secrets.FTPSERVER }}
         username: ${{ secrets.FTPUSERNAME }}
         password: ${{ secrets.FTPPASSWORD }}
-        local-dir: "./"
+        local-dir: "./deploy/"
         server-dir: "./docs.getstacksapp.com/"
