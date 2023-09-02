@@ -17,6 +17,11 @@ jobs:
         BUILD_DIR: docs/.vuepress/dist
         COMMIT_MESSAGE:  Auto deploy by the Vuepress-deploy
 
+    - name: Cleanup
+      uses: rokroskar/workflow-run-cleanup-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
     - name: Checkout Deploy branch
       uses: actions/checkout@master
       with:
