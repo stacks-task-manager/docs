@@ -7,7 +7,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: vuepress-deploy
+    - name: Deploying Docs via Vuepress
       uses: jenkey2011/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
@@ -15,7 +15,7 @@ jobs:
         BUILD_DIR: docs/.vuepress/dist
         COMMIT_MESSAGE:  Auto deploy by the Vuepress-deploy
 
-    - name: Sync files
+    - name: Sync files to FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTPSERVER }}
@@ -23,3 +23,7 @@ jobs:
         password: ${{ secrets.FTPPASSWORD }}
         local-dir: docs/.vuepress/dist
         server-dir: /docs.getstacksapp.com
+
+
+remote: Permission to stacks-task-manager/docs.git denied to synapse.
+fatal: unable to access '***github.com/stacks-task-manager/docs.git/': The requested URL returned error: 403
