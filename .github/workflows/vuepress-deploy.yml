@@ -23,7 +23,3 @@ jobs:
         password: ${{ secrets.FTPPASSWORD }}
         local-dir: docs/.vuepress/dist
         server-dir: /docs.getstacksapp.com
-
-
-remote: Permission to stacks-task-manager/docs.git denied to synapse.
-fatal: unable to access '***github.com/stacks-task-manager/docs.git/': The requested URL returned error: 403
