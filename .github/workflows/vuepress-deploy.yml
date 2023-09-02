@@ -11,7 +11,8 @@ jobs:
       uses: jenkey2011/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        TARGET_REPO: username/repo
-        TARGET_BRANCH: master
+        TARGET_REPO: stacks-task-manager/docs
+        TARGET_BRANCH: deploy
         BUILD_SCRIPT: yarn && yarn build
-        BUILD_DIR: blog/.vuepress/dist/
+        BUILD_DIR: dist/
+        COMMIT_MESSAGE:  Auto deploy by the Vuepress-deploy
