@@ -14,5 +14,5 @@ jobs:
         TARGET_REPO: stacks-task-manager/docs
         TARGET_BRANCH: deploy
         BUILD_SCRIPT: yarn && yarn build
-        BUILD_DIR: dist/
+        BUILD_DIR: docs/.vuepress/dist
         COMMIT_MESSAGE:  Auto deploy by the Vuepress-deploy
