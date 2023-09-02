@@ -18,7 +18,7 @@ jobs:
         COMMIT_MESSAGE:  Auto deploy by the Vuepress-deploy
 
     - name: Checkout Deploy branch
-      uses: actions/checkout@v3
+      uses: actions/checkout@master
       with:
         ref: deploy
 
@@ -30,7 +30,3 @@ jobs:
         password: ${{ secrets.FTPPASSWORD }}
         local-dir: "./"
         server-dir: "./docs.getstacksapp.com/"
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
