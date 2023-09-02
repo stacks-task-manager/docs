@@ -31,9 +31,15 @@ To enable this option:
 
 ## Tint
 
+The tint color functionality empowers you to personalize each stack by assigning a distinct color to it. This vibrant feature offers a range of benefits, allowing you to differentiate and identify various stacks at a glance, thus streamlining your workflow and boosting overall efficiency.
+
 ## Setting a task limit
 
+Task limit allows you to set a maximum task limit for each stack, ensuring focused productivity by prompting you to finish tasks before adding more. Stay organized, reduce overwhelm, and prioritize effectively with visual cues for progress.
+
 ## Collapsing a Stack
+
+Collapsing a stack lets you hide tasks and narrow down stacks, preserving valuable screen space. Ideal for backlogs or low-priority tasks, this option ensures a clutter-free workspace while keeping essential tasks accessible at your convenience. Simplify your view and stay focused with Stack Collapse.
 
 ## Adding a Stack
 

@@ -1,8 +1,6 @@
 # Project settings
 
-## Tags
-
-## Statuses
+## Custom fields
 
 ## Fees & Time
 

@@ -39,7 +39,7 @@ Fill the form and hit `Create and login` to continue configuring the server.
 
 ## Importing server settings
 
-In order to work properly with Stacks app the server needs to import a `JSON` configuration file. Download the schema JSON file from <a href="/files/pb_schema.json" download>**here**</a> and follow the next 3 steps:
+In order to work properly with Stacks app the server needs to import a `JSON` configuration file. Download the schema JSON file from <a href="/assets/server/pb_schema.json" download>**here**</a> and follow the next 3 steps:
 
 1. click on `Settings`
 2. click `Import collections` from the sidebar
