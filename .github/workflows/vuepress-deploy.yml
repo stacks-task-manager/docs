@@ -23,10 +23,14 @@ jobs:
         path: deploy
 
     - name: Sync files to FTP
-      uses: airvzxf/ftp-deployment-action@latest
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ${{ secrets.FTPSERVER }}
-        user: ${{ secrets.FTPUSERNAME }}
+        username: ${{ secrets.FTPUSERNAME }}
         password: ${{ secrets.FTPPASSWORD }}
-        local_dir: "./"
-        remote_dir: "./docs.getstacksapp.com/"
+        local-dir: "./"
+        server-dir: "./docs.getstacksapp.com/"
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
