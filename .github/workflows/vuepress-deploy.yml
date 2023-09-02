@@ -11,15 +11,22 @@ jobs:
       uses: jenkey2011/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        TARGET_REPO: stacks-task-manager/docs
+        TARGET_BRANCH: deploy
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: docs/.vuepress/dist
         COMMIT_MESSAGE:  Auto deploy by the Vuepress-deploy
 
+    - name: Checking out deploy branch
+      uses: actions/checkout@deploy
+
     - name: Sync files to FTP
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: ${{ secrets.FTPSERVER }}
-        username: ${{ secrets.FTPUSERNAME }}
-        password: ${{ secrets.FTPPASSWORD }}
-        local-dir: docs/.vuepress/dist/
-        server-dir: /docs.getstacksapp.com/
+      uses: airvzxf/ftp-deployment-action@latest
+        with:
+          server: ${{ secrets.FTPSERVER }}
+          user: ${{ secrets.FTPUSERNAME }}
+          password: ${{ secrets.FTPPASSWORD }}
+          local_dir: "./docs/.vuepress/dist/"
+          remote_dir: "./docs.getstacksapp.com/"
+          delete: "false"
+      
