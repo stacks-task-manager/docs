@@ -17,11 +17,16 @@ jobs:
         BUILD_DIR: docs/.vuepress/dist
         COMMIT_MESSAGE:  Auto deploy by the Vuepress-deploy
 
+    - name: Checkout Deploy branch
+      uses: actions/checkout@v3
+      with:
+        path: deploy
+
     - name: Sync files to FTP
       uses: airvzxf/ftp-deployment-action@latest
       with:
         server: ${{ secrets.FTPSERVER }}
         user: ${{ secrets.FTPUSERNAME }}
         password: ${{ secrets.FTPPASSWORD }}
-        local_dir: "./docs/.vuepress/dist/"
+        local_dir: "./"
         remote_dir: "./docs.getstacksapp.com/"
