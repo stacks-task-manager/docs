@@ -17,8 +17,6 @@ jobs:
         BUILD_DIR: docs/.vuepress/dist
         COMMIT_MESSAGE:  Auto deploy by the Vuepress-deploy
 
-    - uses: actions/checkout@deploy
-
     - name: Sync files to FTP
       uses: airvzxf/ftp-deployment-action@latest
       with:
