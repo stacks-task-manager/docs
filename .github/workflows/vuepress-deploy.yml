@@ -28,5 +28,3 @@ jobs:
           password: ${{ secrets.FTPPASSWORD }}
           local_dir: "./docs/.vuepress/dist/"
           remote_dir: "./docs.getstacksapp.com/"
-          delete: "false"
-      
