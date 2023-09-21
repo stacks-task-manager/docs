@@ -6,9 +6,22 @@ Please keep in mind that Stack Server is still under active development and ther
 
 ## Downloading the server
 
-The Stacks server is based on [PocketBase](https://pocketbase.io) which is an open source backend consisting of embedded database (SQLite) with realtime subscriptions, built-in users management, convenient dashboard UI and simple REST-ish API.
+The Stacks server is based on [PocketBase](https://pocketbase.io/docs) which is an open source backend consisting of embedded database (SQLite) with realtime subscriptions, built-in users management, convenient dashboard UI and simple REST-ish API.
 
-The easiest way to get started is to download the prebuilt minimal PocketBase app from their [website](https://pocketbase.io/docs/).
+The easiest way to get started is to download the prebuilt minimal PocketBase app from their [website](https://pocketbase.io/docs/). 
+
+
+## Downloading settings
+
+The Stacks server require a couple of key components to make it work at its best. Download the latest version from our [GitHub repo](https://github.com/stacks-task-manager/server). Copy the downloaded `pb_hooks` folder and `pb_schema.json` file to your desired location.
+
+You should have the following folder structure:
+```
+- stacks_server
+  - pocketbase
+  - pb_hooks
+  - pb_schema.json
+```
 
 ## Running the server
 
@@ -39,11 +52,11 @@ Fill the form and hit `Create and login` to continue configuring the server.
 
 ## Importing server settings
 
-In order to work properly with Stacks app the server needs to import a `JSON` configuration file. Download the schema JSON file from <a href="/assets/server/pb_schema.json" download>**here**</a> and follow the next 3 steps:
+In order to work properly with the Stacks app the server needs to import the custom `pb_schema.json` configuration file. Check the [previous step](#downloading-settings) in case you're missing this file, and follow the next 3 steps:
 
 1. click on `Settings`
 2. click `Import collections` from the sidebar
-3. click the `Load from JSON file` button and select the previously downloaded `pb_schema.json` file
+3. click the `Load from JSON file` button and select the `pb_schema.json` file
 
 <img :src="$withBase('/assets/img/server/import-settings.png')">
 
