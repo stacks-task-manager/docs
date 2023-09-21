@@ -1,6 +1,22 @@
 # Project settings
 
+The project settings section is where you can customize and adjust various aspects of your project.
+
+## Opening project settings
+
+1. Click on the project context menu button
+2. Click on the Project settings menu item
+
+<img :src="$withBase('/assets/img/projects/project-settings.png')">
+
 ## Custom fields
+
+Custom fields provide a flexible way to enhance the task details by adding new fields of different types. These custom fields allow you to tailor the task information to your specific needs, providing additional context and organization for your projects and tasks.
+
+<img :src="$withBase('/assets/img/projects/custom-fields-1.png')">
+<img :src="$withBase('/assets/img/projects/custom-fields-2.png')">
+<img :src="$withBase('/assets/img/projects/custom-fields-3.png')">
+
 
 ## Fees & Time
 
