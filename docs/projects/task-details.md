@@ -16,6 +16,7 @@ There are 3 ways of assigning tags to a task:
 <p align="center">
 <img :src="$withBase('/assets/img/projects/assigning-tags.png')" width="70%">
 </p>
+
 ## Assigning people
 
 There are 2 ways to assign people to a task:
@@ -44,6 +45,7 @@ The date indicator will be marked in `orange` for dates due today while in `red`
 :::
 
 ## Adding subtasks
+
 To add subtasks follow these simple steps:
 
 1. Click the task where you want to add a subtask
